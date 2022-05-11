@@ -68,7 +68,7 @@ def per90percent():
     engine.runAndWait()
     notifyBattcom()
     
-def batterypluggedin_1():
+def main():
     fal = True
     while True:
         engine = pyttsx3.init()
@@ -129,5 +129,5 @@ def batterypluggedin_1():
                             en2 = True
 
 if __name__=='__main__':
-    batterypluggedin_1()
+    main()
     
