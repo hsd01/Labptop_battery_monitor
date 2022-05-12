@@ -24,3 +24,5 @@ it also speak if charger is plugged in or out of laptop, it lets you know if bat
 update It gives a popup notification
 
 use second code BatteryManaging_notification.py It has popup notification.
+
+NOTE: for icon i used itachi.pnj. make sure to change path to ur image file when using icon
