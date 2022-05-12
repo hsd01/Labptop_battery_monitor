@@ -3,6 +3,7 @@ import pyttsx3
 import psutil
 from winotify import Notification, audio
 
+img = 'Itachi.png'
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[1])
@@ -12,7 +13,7 @@ def notify():
                      title="LinkedIn Learning",
                      msg = "Hemant S D",
                      duration="long",
-                     icon = 'D:/Itachi.png')
+                     icon = img)
     t.set_audio(audio.LoopingAlarm, loop = False)
     t.add_actions(label='Click me', launch='https://www.linkedin.com/learning/?u=88011874')
 
@@ -23,7 +24,7 @@ def notifyBattLow():
                      title="Battery Status",
                      msg = "Battery is low its below 20%",
                      duration="long",
-                     icon = 'D:/Itachi.png')
+                     icon = img)
     t.set_audio(audio.LoopingAlarm, loop = False)
     t.add_actions(label='close', launch='')
 
@@ -34,7 +35,7 @@ def notifyBattcom():
                      title="Battery Status",
                      msg = "Battery is charged more than 90%",
                      duration="long",
-                     icon = 'D:/Itachi.png')
+                     icon = img)
     t.set_audio(audio.LoopingAlarm, loop = False)
     t.add_actions(label='close', launch='')
 
